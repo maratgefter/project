@@ -40,7 +40,7 @@ use App\View\Helper\HTML;
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("usergroup/show", ['page' => 1])?>">Users Group</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("feedback/show", ['page' => 1])?>">Feedback</a>
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("remarks/show", ['page' => 1])?>">Remarks</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("users/show", ['page' => 1])?>">Users</a>

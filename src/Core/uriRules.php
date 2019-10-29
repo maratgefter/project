@@ -10,10 +10,10 @@ return [
     '/usergroup/add' => 'usergroup/showaddform',
     '/usergroup/delete{id}' => 'usergroup/delete',
 
-    '/feedback/page{page}' => 'feedback/show',
-    '/feedback/edit{id}' => 'feedback/showeditform',
-    '/feedback/add' => 'feedback/showaddform',
-    '/feedback/delete{id}' => 'feedback/delete',
+    '/remarks/page{page}' => 'remarks/show',
+    '/remarks/edit{id}' => 'remarks/showeditform',
+    '/remarks/add' => 'remarks/showaddform',
+    '/remarks/delete{id}' => 'remarks/delete',
 
     '/users/page{page}' => 'users/show',
     '/users/edit{id}' => 'users/showeditform',
