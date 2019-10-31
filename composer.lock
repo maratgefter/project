@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "acf37e235aa570a154aa1e3df4b98e8f",
+    "content-hash": "68eec9cf7b808bd3528b48939d83edf3",
     "packages": [
         {
             "name": "texlab/mydb",
-            "version": "v0.0.2",
+            "version": "v0.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andy-aa/mydb.git",
-                "reference": "470ce74209320fa93178e559fe6517f8a4ad175f"
+                "reference": "9ab3cda43bd50176faf3315e876eb36f339b6ef5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andy-aa/mydb/zipball/470ce74209320fa93178e559fe6517f8a4ad175f",
-                "reference": "470ce74209320fa93178e559fe6517f8a4ad175f",
+                "url": "https://api.github.com/repos/andy-aa/mydb/zipball/9ab3cda43bd50176faf3315e876eb36f339b6ef5",
+                "reference": "9ab3cda43bd50176faf3315e876eb36f339b6ef5",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "orm",
                 "php"
             ],
-            "time": "2019-09-19T08:17:58+00:00"
+            "time": "2019-10-29T18:01:03+00:00"
         },
         {
             "name": "texlab/route",
@@ -755,16 +755,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.4.1",
+            "version": "8.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "366a4a0f2b971fd43b7c351d621e8dd7d7131869"
+                "reference": "a142a7e66c0ea7b5b6c04ee27f08d10d1137cd9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/366a4a0f2b971fd43b7c351d621e8dd7d7131869",
-                "reference": "366a4a0f2b971fd43b7c351d621e8dd7d7131869",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a142a7e66c0ea7b5b6c04ee27f08d10d1137cd9b",
+                "reference": "a142a7e66c0ea7b5b6c04ee27f08d10d1137cd9b",
                 "shasum": ""
             },
             "require": {
@@ -834,7 +834,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2019-10-07T12:57:41+00:00"
+            "time": "2019-10-28T10:39:51+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

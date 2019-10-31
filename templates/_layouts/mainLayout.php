@@ -45,6 +45,12 @@ use App\View\Helper\HTML;
         <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("users/show", ['page' => 1])?>">Users</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("workshops/show", ['page' => 1])?>">Workshops</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("remarktype/show", ['page' => 1])?>">Remark Type</a>
+        </li>
 
         <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("site/loginform")?>">Login</a>

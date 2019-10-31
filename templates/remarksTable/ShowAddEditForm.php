@@ -5,10 +5,10 @@
                 <?php
                 foreach ($columnsNames as $name) {
                     if ($name != 'id') {
-                        if ($name == 'user_group_id') {
+                        if ($name == 'workshop_id') {
 
                             echo "<label>" . (empty($tableHeaders[$name]) ? $name : $tableHeaders[$name]);
-                            echo "<br><select name='user_group_id'>";
+                            echo "<br><select name='workshop_id'>";
                             foreach ($userGroup as $id => $groupName) {
                                 echo "<option value='$id'>$groupName</option>";
                             }
@@ -24,7 +24,7 @@
                     }
                 }
                 ?>
-                <input class="btn btn-info my-4" type="submit" value="OK111">
+                <input class="btn btn-info my-4" type="submit" value="OK">
             </form>
         </div>
     </div>
