@@ -75,6 +75,7 @@ abstract class AbstractTableController extends AbstractController
     public function actionAdd()
     {
         $this->table->add($_POST);
+        // print_r($_POST);
         $this->redirect(Dispatcher::dispatcher()->encodeUri($this->shortClassName() . "/show", ['page' => 1]));
     }
 }

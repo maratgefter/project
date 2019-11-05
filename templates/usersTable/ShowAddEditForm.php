@@ -8,7 +8,7 @@
                         if ($name == 'user_group_id') {
 
                             echo "<label>" . (empty($tableHeaders[$name]) ? $name : $tableHeaders[$name]);
-                            echo "<br><select name='user_group_id'>";
+                            echo "<br><select name='user_group_id' class='form-control'>";
                             foreach ($userGroup as $id => $groupName) {
                                 echo "<option value='$id'>$groupName</option>";
                             }

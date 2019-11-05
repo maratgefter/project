@@ -5,12 +5,28 @@
                 <?php
                 foreach ($columnsNames as $name) {
                     if ($name != 'id') {
-                        if ($name == 'workshop_id') {
-
+                        if ($name == 'workshops_id') {
+                            
                             echo "<label>" . (empty($tableHeaders[$name]) ? $name : $tableHeaders[$name]);
-                            echo "<br><select name='workshop_id'>";
-                            foreach ($userGroup as $id => $groupName) {
-                                echo "<option value='$id'>$groupName</option>";
+                            echo "<br><select name='workshops_id' class='form-control'>";
+                            foreach ($workshop as $id => $name) {
+                                echo "<option value='$id'>$name</option>";
+                            }
+
+                            echo "</select></lable><br>";
+                        } else if ($name == 'users_id') {
+                            echo "<label>" . (empty($tableHeaders[$name]) ? $name : $tableHeaders[$name]);
+                            echo "<br><select name='users_id' class='form-control'>";
+                            foreach ($user as $id => $name) {
+                                echo "<option value='$id'>$name</option>";
+                            }
+
+                            echo "</select></lable><br>";
+                        } elseif ($name == 'remark_type_id') {
+                            echo "<label>" . (empty($tableHeaders[$name]) ? $name : $tableHeaders[$name]);
+                            echo "<br><select name='remark_type_id' class='form-control'>";
+                            foreach ($remarkType as $id => $remark_type) {
+                                echo "<option value='$id'>$remark_type</option>";
                             }
 
                             echo "</select></lable><br>";
