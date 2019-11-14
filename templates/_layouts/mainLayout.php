@@ -33,10 +33,7 @@ use App\View\Helper\HTML;
         <li class="nav-item active">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("site/home")?>">Home <span class="sr-only">(current)</span></a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("site/about")?>">About</a>
-        </li> -->
-        
+                
         <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("usergroup/show", ['page' => 1])?>">Users Group</a>
         </li>
@@ -54,13 +51,9 @@ use App\View\Helper\HTML;
         </li>
        
 
-        <!-- <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("site/loginform")?>">Login</a>
-        </li> -->
-
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("signup/showform")?>">Sign Up</a>
-        </li> -->
+        </li>
 
         <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
