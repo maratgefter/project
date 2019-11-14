@@ -34,21 +34,29 @@ use App\View\Helper\HTML;
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("site/home")?>">Home <span class="sr-only">(current)</span></a>
         </li>
                 
-        <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("usergroup/show", ['page' => 1])?>">Users Group</a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("remarks/show", ['page' => 1])?>">Remarks</a>
         </li>
+        
+
+        <?php if(isset($getUserPermits)) { ?>
         <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("users/show", ['page' => 1])?>">Users</a>
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("usergroup/show", ['page' => 1])?>">Users Group</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("workshops/show", ['page' => 1])?>">Workshops</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("users/show", ['page' => 1])?>">Users</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("remarktype/show", ['page' => 1])?>">Remark Type</a>
         </li>
+        <?php }?>
+
+
+        
        
 
         <li class="nav-item">

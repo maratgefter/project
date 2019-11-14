@@ -31,4 +31,4 @@ use App\Core\Router;
 // $obj = new AuthModel($link);
 // print_r($obj->getUserData('rr', '4'));
 
-// echo '123'.$getUserPermits;
+echo $getUserPermits;
