@@ -23,8 +23,11 @@ foreach ($table as $row) {
     foreach ($row as $value) {
         echo "<td>$value</td>";
     }
-    echo "<td><a href='$editLink" . $row['id'] . "' class='btn btn-warning'>Edit</a></td>";
-    echo "<td><a href='$delLink" . $row['id'] . "' class='btn btn-danger'>Delete</a></td></tr>";
+    if ($getUserPermits) {
+        echo "<td><a href='$editLink" . $row['id'] . "' class='btn btn-warning'>Edit</a></td>";
+        echo "<td><a href='$delLink" . $row['id'] . "' class='btn btn-danger'>Delete</a></td></tr>";
+    }
+    
 }
 echo "</table>";
 echo "<a href='$addLink' class='btn btn-success'>Add new</a>";

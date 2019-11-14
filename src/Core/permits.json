@@ -8,6 +8,8 @@
         "tableOneController",
         "tableTwoController",
         "UserGroupController",
-        "UsersController"
+        "UsersController",
+        "RemarkTypeController",
+        "WorkshopsController"
     ]
 }

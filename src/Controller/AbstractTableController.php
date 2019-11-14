@@ -36,6 +36,7 @@ abstract class AbstractTableController extends AbstractController
             'currentPage' => $page,
             'controllerName' => $this->shortClassName(),
             'tableHeaders' => $this->table->getColumnsComments(),
+            'getUserPermits' => $_SESSION['user']['cod'] == "dft" ? false : true 
 
         ]);
     }
