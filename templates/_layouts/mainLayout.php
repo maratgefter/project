@@ -34,13 +34,14 @@ use App\View\Helper\HTML;
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("site/home")?>">Home <span class="sr-only">(current)</span></a>
         </li>
                 
-        
+        <?php if($_SESSION['user']['cod'] == 'adm' || $_SESSION['user']['cod'] == 'usr' || $_SESSION['user']['cod'] == 'dft') { ?>
         <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("remarks/show", ['page' => 1])?>">Remarks</a>
         </li>
+        <?php }?>
         
 
-        <?php if(isset($getUserPermits)) { ?>
+        <?php if($_SESSION['user']['cod'] == 'adm') { ?>
         <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("usergroup/show", ['page' => 1])?>">Users Group</a>
         </li>
@@ -58,10 +59,11 @@ use App\View\Helper\HTML;
 
         
        
-
+        <?php if($_SESSION['user']['cod'] != 'adm') { ?>
         <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("site/loginform")?>">Login</a>
         </li>
+        <?php }?>
 
         <!-- <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

@@ -23,14 +23,18 @@ foreach ($table as $row) {
     foreach ($row as $value) {
         echo "<td>$value</td>";
     }
-    if ($getUserPermits) {
+    if ($_SESSION['user']['cod'] == 'adm') {
         echo "<td><a href='$editLink" . $row['id'] . "' class='btn btn-warning'>Edit</a></td>";
         echo "<td><a href='$delLink" . $row['id'] . "' class='btn btn-danger'>Delete</a></td></tr>";
     }
     
 }
 echo "</table>";
-echo "<a href='$addLink' class='btn btn-success'>Add new</a>";
+
+if($_SESSION['user']['cod'] == 'adm' || $_SESSION['user']['cod'] == 'usr') {
+    echo "<a href='$addLink' class='btn btn-success'>Add new</a>";
+}
+
 echo "</div></div>";
 echo $paginationHTML;
 
