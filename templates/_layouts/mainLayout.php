@@ -36,32 +36,32 @@ use App\View\Helper\HTML;
                 
         <?php if($_SESSION['user']['cod'] == 'adm' || $_SESSION['user']['cod'] == 'usr' || $_SESSION['user']['cod'] == 'dft') { ?>
         <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("remarks/show", ['page' => 1])?>">Remarks</a>
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("remarks/show", ['page' => 1])?>">Замечания</a>
         </li>
         <?php }?>
         
 
         <?php if($_SESSION['user']['cod'] == 'adm') { ?>
         <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("usergroup/show", ['page' => 1])?>">Users Group</a>
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("usergroup/show", ['page' => 1])?>">Группы пользователей</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("workshops/show", ['page' => 1])?>">Workshops</a>
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("workshops/show", ['page' => 1])?>">Производственные цеха</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("users/show", ['page' => 1])?>">Users</a>
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("users/show", ['page' => 1])?>">Пользователи</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("remarktype/show", ['page' => 1])?>">Remark Type</a>
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("remarktype/show", ['page' => 1])?>">Тип замечаний</a>
         </li>
         <?php }?>
 
 
         
        
-        <?php if($_SESSION['user']['cod'] != 'adm') { ?>
+        <?php if($_SESSION['user']['cod'] != 'adm' && $_SESSION['user']['cod'] != 'usr' && $_SESSION['user']['cod'] != 'dft') { ?>
         <li class="nav-item">
-          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("site/loginform")?>">Login</a>
+          <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("site/loginform")?>">Войти</a>
         </li>
         <?php }?>
 
@@ -81,7 +81,7 @@ use App\View\Helper\HTML;
   <!-- <div class="container"> -->
 
     <div id="user_state" class="float-right">
-      <?= Auth::currentUserInfo() . " " . (isset($_SESSION['user']) ? "<a href='?a=logout'>Logout</a>" : "") ?>
+      <?= Auth::currentUserInfo() . " " . (isset($_SESSION['user']) ? "<a href='?a=logout'>Выход</a>" : "") ?>
     </div>
     <br />
   <!-- </div> -->

@@ -13,8 +13,8 @@ echo "<div class='container'><div class='row justify-content-center'>";
 echo "<table class='table table-striped table-dark'>";
 
 echo "<tr>";
-foreach ($tableHeaders as $fieldName => $th ) {
-    echo "<th>".(empty($th) ? $fieldName : $th)."</th>";
+foreach ($tableHeaders as $fieldName => $th) {
+    echo "<th>" . (empty($th) ? $fieldName : $th) . "</th>";
 }
 echo "<th colspan='2'></th></tr>";
 
@@ -27,14 +27,12 @@ foreach ($table as $row) {
         echo "<td><a href='$editLink" . $row['id'] . "' class='btn btn-warning'>Edit</a></td>";
         echo "<td><a href='$delLink" . $row['id'] . "' class='btn btn-danger'>Delete</a></td></tr>";
     }
-    
 }
 echo "</table>";
 
-if($_SESSION['user']['cod'] == 'adm' || $_SESSION['user']['cod'] == 'usr') {
-    echo "<a href='$addLink' class='btn btn-success'>Add new</a>";
+if ($_SESSION['user']['cod'] == 'adm' || $_SESSION['user']['cod'] == 'usr') {
+    echo "<p><a href='$addLink' class='btn btn-success'>Добавить запись</a></p>";
 }
 
 echo "</div></div>";
 echo $paginationHTML;
-

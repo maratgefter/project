@@ -30,6 +30,13 @@
                             }
 
                             echo "</select></lable><br>";
+                        } elseif ($name == 'date') {
+                            echo "<label>"
+                                . (empty($tableHeaders[$name]) ? $name : $tableHeaders[$name])
+                                . "<input class='form-control mb-4' type='datetime-local' name='"
+                                . $name . "' value='"
+                                . ($editValues[$name] ?? '') . "'></label><br>"; 
+                             
                         } else {
                             echo "<label>"
                                 . (empty($tableHeaders[$name]) ? $name : $tableHeaders[$name])
