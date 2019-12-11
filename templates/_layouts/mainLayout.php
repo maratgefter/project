@@ -30,11 +30,11 @@ use App\View\Helper\HTML;
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
-        <?php if(!isset($_SESSION['user']['cod'])) { ?>
+        
         <li class="nav-item">
           <a class="nav-link" href="<?=Dispatcher::dispatcher()->encodeUri("site/home")?>">Home <span class="sr-only">(current)</span></a>
         </li>
-        <?php }?>
+
                 
         <?php if($_SESSION['user']['cod'] == 'adm' || $_SESSION['user']['cod'] == 'usr' || $_SESSION['user']['cod'] == 'dft') { ?>
         <li class="nav-item">
