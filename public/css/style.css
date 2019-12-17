@@ -1,4 +1,150 @@
-#body {
-  background: radial-gradient(circle at center, #917676, #3eca74);
+@import url("https://fonts.googleapis.com/css?family=Girassol&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Courier+Prime&display=swap");
+body {
+  background-color: #008B8B;
+  font-family: 'Girassol', cursive;
+  font-size: 24px;
+}
+
+body a {
+  color: #FF8C00;
+}
+
+body a:hover {
+  color: #F6F6F6;
+}
+
+body #navigation {
+  background-color: #343434 !important;
+  font-family: 'Courier Prime', monospace;
+}
+
+body #navigation a {
+  color: #FF8C00;
+}
+
+body #navigation a:hover {
+  color: #F6F6F6;
+}
+
+table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  border: 2px solid #C4C4C4;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+table tr td {
+  padding: 10px 20px;
+}
+
+.addEdit {
+  width: 100%;
+  height: 90%;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+  color: #666666;
+}
+
+.addEdit input[type="text"], .addEdit textarea, .addEdit select {
+  color: #666666;
+  border-radius: 5px;
+  border: 2px solid #C4C4C4;
+  margin-bottom: 20px;
+  padding: 2px 5px;
+}
+
+.addEdit input[type="text"]:hover, .addEdit input[type="text"]:focus, .addEdit textarea:hover, .addEdit textarea:focus, .addEdit select:hover, .addEdit select:focus {
+  border: 2px solid #E06149;
+  outline: none;
+}
+
+.addEdit input[type="submit"] {
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #E06149;
+  color: #343434;
+  border: none;
+}
+
+.addEdit input[type="submit"]:hover {
+  background-color: #F26961;
+  color: #232323;
+}
+
+.login {
+  width: 100%;
+  height: 80%;
+  position: fixed;
+  top: 5%;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+  color: #666666;
+}
+
+.login form {
+  background-color: #343434 !important;
+}
+
+.pagination > li > a {
+  background-color: #F6F6F6;
+  color: #343434 !important;
+}
+
+.pagination > .active > a {
+  background-color: #E06149 !important;
+  color: #F6F6F6 !important;
+  border-color: #E06149 !important;
+}
+
+label {
+  display: block;
+}
+
+select {
+  margin-top: 10px;
+}
+
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

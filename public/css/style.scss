@@ -1,3 +1,120 @@
-#body {
-    background: radial-gradient(circle at center,#917676, #3eca74);
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
+body {
+    background-color: #008B8B;
+    font-family: 'Girassol', cursive;
+    font-size: 24px;
+    a {
+        color: #FF8C00;
+        &:hover {
+            color: #F6F6F6;
+        }
+    }
+    #navigation {
+        background-color: #343434 !important;
+        font-family: 'Courier Prime', monospace;
+        a {
+            color: #FF8C00;
+            &:hover {
+                color: #F6F6F6;
+            }
+        }
+    }
+    }
+    
+        table {
+            margin-top: 10px;
+            border-collapse: collapse;
+            border: 2px solid #C4C4C4;
+            border-radius: 10px;
+            font-size: 16px;
+            tr {
+                td {
+                    padding: 10px 20px;
+                }
+            }
+        }
+    
+    .addEdit {
+        width: 100%;
+        height: 90%;
+        position: fixed;
+        top: 10%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center; 
+        justify-content: center; 
+        overflow: auto;
+        color: #666666;
+        input[type="text"], textarea, select {
+            color: #666666;
+            border-radius: 5px;
+            border: 2px solid #C4C4C4;
+            margin-bottom: 20px;
+            padding: 2px 5px;
+            &:hover, &:focus {
+                border: 2px solid #E06149;
+                outline: none;
+            }
+        }
+        input[type="submit"] {
+            border-radius: 5px;
+            padding: 8px;
+            background-color: #E06149;
+            color: #343434;
+            border: none;
+            &:hover {
+                background-color: #F26961;
+                color: #232323;
+            }
+        }
+    }
+    .login {
+        width: 100%;
+        height: 80%;
+        position: fixed;
+        top: 5%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center; 
+        justify-content: center; 
+        overflow: auto;
+        color: #666666;
+        form{
+            background-color: #343434 !important;
+        }
+    }
+
+
+.pagination > li > a
+{
+    background-color: #F6F6F6;
+    color: #343434 !important;
+}
+.pagination > .active > a
+{
+    background-color: #E06149 !important;
+    color: #F6F6F6 !important;
+    border-color: #E06149 !important;
+}
+label {
+    display: block;
+}
+select {
+    margin-top: 10px;
+}
+
+#image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
 }

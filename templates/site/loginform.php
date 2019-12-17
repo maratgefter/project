@@ -3,7 +3,7 @@
 /** @var string $loginURL */
 ?>
 
-<div>
+<div class="login">
     <form action="<?= $loginURL ?>" method="POST" class="text-center border border-light p-5">
         <label>
             <input class="form-control mb-4"type="text" name="user" placeholder="User">
